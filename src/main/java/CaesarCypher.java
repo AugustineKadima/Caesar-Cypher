@@ -39,9 +39,19 @@ public class CaesarCypher {
         this.shiftValue = shiftValue;
     }
 
-    public String shiftCharOneStepForward(String randomWord){
-        this.alphabetWord= randomWord;
-        return this.alphabetWord;
+    public String shiftCharOneStepForward(String randomWord, int shiftValue){
+        this.alphabetWord = randomWord;
+        this.shiftValue = shiftValue;
+
+        String newShiftedString = "";
+
+        char[] alphabetCharacters = this.alphabetWord.toCharArray();
+        for(int i = 0; i <= alphabetCharacters.length; i++){
+            if(shiftValue == 0){
+                newShiftedString = this.alphabetWord;
+            }
+            }
+        return newShiftedString;
     }
 
 }
