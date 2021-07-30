@@ -5,7 +5,7 @@ public class CaesarCypherTest {
     @Test
     public void caesar_Cypher_shiftCharacterOneStepForward_char(){
         CaesarCypher caesarCypher = new CaesarCypher();
-        char expected = 'b';
-        Assertions.assertEquals(expected, caesarCypher.shiftCharOneStepForward('a'));
+        String expected = "a";
+        Assertions.assertEquals(expected, caesarCypher.shiftCharOneStepForward("a"));
     }
 }

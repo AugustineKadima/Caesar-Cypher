@@ -20,7 +20,7 @@ If character does not exist, character is empty or character is a punctuation ma
 */
 
 public class CaesarCypher {
-    char alphabetLetter;
+    int shiftValue;
     String alphabetWord;
 
     public String getAlphabetWord() {
@@ -31,17 +31,17 @@ public class CaesarCypher {
         this.alphabetWord = alphabetWord;
     }
 
-    public char getAlphabetLetter() {
-        return alphabetLetter;
+    public int getShiftValue() {
+        return shiftValue;
     }
 
-    public void setAlphabetLetter(char alphabetLetter) {
-        this.alphabetLetter = alphabetLetter;
+    public void setShiftValue(int shiftValue) {
+        this.shiftValue = shiftValue;
     }
 
-    public char shiftCharOneStepForward(char randomLetter){
-        this.alphabetLetter = randomLetter;
-        return this.alphabetLetter++;
+    public String shiftCharOneStepForward(String randomWord){
+        this.alphabetWord= randomWord;
+        return this.alphabetWord;
     }
 
 }
