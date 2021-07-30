@@ -20,4 +20,24 @@ If character does not exist, character is empty or character is a punctuation ma
 */
 
 public class CaesarCypher {
+    char alphabetLetter;
+    String alphabetWord;
+
+    public String getAlphabetWord() {
+        return alphabetWord;
+    }
+
+    public void setAlphabetWord(String alphabetWord) {
+        this.alphabetWord = alphabetWord;
+    }
+    
+    public char getAlphabetLetter() {
+        return alphabetLetter;
+    }
+
+    public void setAlphabetLetter(char alphabetLetter) {
+        this.alphabetLetter = alphabetLetter;
+    }
+
+
 }
