@@ -30,7 +30,7 @@ public class CaesarCypher {
     public void setAlphabetWord(String alphabetWord) {
         this.alphabetWord = alphabetWord;
     }
-    
+
     public char getAlphabetLetter() {
         return alphabetLetter;
     }
@@ -39,5 +39,9 @@ public class CaesarCypher {
         this.alphabetLetter = alphabetLetter;
     }
 
+    public char shiftCharOneStepForward(char randomLetter){
+        this.alphabetLetter = randomLetter;
+        return this.alphabetLetter++;
+    }
 
 }
