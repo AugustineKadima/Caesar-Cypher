@@ -26,11 +26,11 @@ public class CaesarCypherTest {
         String expected = "wxy";
         Assertions.assertEquals(expected, caesarCypher.shiftCharOneStepForward("vwx", 1));
     }
-//    @Test
-//    public void caesar_Cypher_decipherText_string_char(){
-//        CaesarCypher caesarCypher = new CaesarCypher();
-//        String expected = "x";
-//        Assertions.assertEquals(expected, caesarCypher.decipherText());
-//    }
+    @Test
+    public void caesar_Cypher_decipherText_string_char(){
+        CaesarCypher caesarCypher = new CaesarCypher();
+        String expected = "abc";
+        Assertions.assertEquals(expected, caesarCypher.decipherText("bcd", 1));
+    }
 
 }
