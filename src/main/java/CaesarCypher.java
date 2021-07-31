@@ -54,6 +54,12 @@ public class CaesarCypher {
             }
 
             for(int i = 0; i <= alphabetCharacters.length; i++){
+                if (!randomWord.equals("") && shiftValue >= 1 && shiftValue < 26){
+                  int charVal =  Character.valueOf(alphabetCharacters[i]) + shiftValue;
+
+                  newShiftedString += Character.toChars(charVal).toString();
+                }
+
             }
         return newShiftedString;
     }

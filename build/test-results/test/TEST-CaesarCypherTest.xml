@@ -1,13 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="CaesarCypherTest" tests="1" skipped="0" failures="1" errors="0" timestamp="2021-07-31T12:21:21" hostname="sirkadima-HP-Compaq-6200-Pro-SFF-PC" time="0.02">
+<testsuite name="CaesarCypherTest" tests="1" skipped="0" failures="1" errors="0" timestamp="2021-07-31T15:30:18" hostname="sirkadima-HP-Compaq-6200-Pro-SFF-PC" time="0.018">
   <properties/>
-  <testcase name="caesar_Cypher_shiftCharacterOneStepForward_string_int_shiftedString()" classname="CaesarCypherTest" time="0.02">
-    <failure message="org.opentest4j.AssertionFailedError: expected: &lt;b&gt; but was: &lt;&gt;" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: expected: &lt;b&gt; but was: &lt;&gt;
-	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:55)
-	at org.junit.jupiter.api.AssertionUtils.failNotEqual(AssertionUtils.java:62)
-	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)
-	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:177)
-	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1124)
+  <testcase name="caesar_Cypher_shiftCharacterOneStepForward_string_int_shiftedString()" classname="CaesarCypherTest" time="0.018">
+    <failure message="java.lang.ArrayIndexOutOfBoundsException: Index 1 out of bounds for length 1" type="java.lang.ArrayIndexOutOfBoundsException">java.lang.ArrayIndexOutOfBoundsException: Index 1 out of bounds for length 1
+	at CaesarCypher.shiftCharOneStepForward(CaesarCypher.java:58)
 	at CaesarCypherTest.caesar_Cypher_shiftCharacterOneStepForward_string_int_shiftedString(CaesarCypherTest.java:27)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
