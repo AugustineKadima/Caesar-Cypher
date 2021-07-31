@@ -46,12 +46,14 @@ public class CaesarCypher {
         String newShiftedString = "";
 
         char[] alphabetCharacters = this.alphabetWord.toCharArray();
-        for(int i = 0; i <= alphabetCharacters.length; i++){
-            if(shiftValue == 0 && randomWord != "") newShiftedString = this.alphabetWord;
-            else if (randomWord == "" && shiftValue >= 0 && shiftValue < 26) newShiftedString = "Please type your word";
-            else if ((randomWord == "" || randomWord != "") && (shiftValue < 1 || shiftValue > 25)){
+
+            if(shiftValue == 0 && !randomWord.equals("")) newShiftedString = this.alphabetWord;
+            else if (randomWord.equals("") && shiftValue >= 0 && shiftValue < 26) newShiftedString = "Please type your word";
+            else if ((randomWord.equals("")|| !randomWord.equals("")) && (shiftValue < 1 || shiftValue > 25)){
                 newShiftedString = "Shift value should be a number greater or equal to 1 and less or equal to 25";
             }
+
+            for(int i = 0; i <= alphabetCharacters.length; i++){
             }
         return newShiftedString;
     }
