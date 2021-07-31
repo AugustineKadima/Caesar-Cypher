@@ -65,7 +65,9 @@ public class CaesarCypher {
                 char shifted = (char) charVal;
 
                 newShiftedString += Character.toString(shifted);
+
             }
+
         }
         return newShiftedString;
     }

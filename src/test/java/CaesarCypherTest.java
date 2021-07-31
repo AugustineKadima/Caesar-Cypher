@@ -29,8 +29,8 @@ public class CaesarCypherTest {
     @Test
     public void caesar_Cypher_decipherText_string_char(){
         CaesarCypher caesarCypher = new CaesarCypher();
-        String expected = "abc";
-        Assertions.assertEquals(expected, caesarCypher.decipherText("bcd", 1));
+        String expected = "b";
+        Assertions.assertEquals(expected, caesarCypher.decipherText("c", 1));
     }
 
 }
