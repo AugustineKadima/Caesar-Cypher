@@ -53,11 +53,12 @@ public class CaesarCypher {
                 newShiftedString = "Shift value should be a number greater or equal to 1 and less or equal to 25";
             }
 
-            for(int i = 0; i <= alphabetCharacters.length; i++){
+            for(char character: alphabetCharacters){
                 if (!randomWord.equals("") && shiftValue >= 1 && shiftValue < 26){
-                  int charVal =  Character.valueOf(alphabetCharacters[i]) + shiftValue;
+                  int charVal =  Character.valueOf(character) + shiftValue;
+                  char shifted = (char) charVal;
 
-                  newShiftedString += Character.toChars(charVal).toString();
+                  newShiftedString = Character.toString(shifted);
                 }
 
             }

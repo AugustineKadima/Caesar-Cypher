@@ -23,7 +23,7 @@ public class CaesarCypherTest {
     @Test
     public void caesar_Cypher_shiftCharacterOneStepForward_string_int_shiftedString(){
         CaesarCypher caesarCypher = new CaesarCypher();
-        String expected = "b";
-        Assertions.assertEquals(expected, caesarCypher.shiftCharOneStepForward("a", 1));
+        String expected = "z";
+        Assertions.assertEquals(expected, caesarCypher.shiftCharOneStepForward("a", 25));
     }
 }
