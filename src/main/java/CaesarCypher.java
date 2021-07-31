@@ -47,7 +47,7 @@ public class CaesarCypher {
 
         char[] alphabetCharacters = this.alphabetWord.toCharArray();
         for(int i = 0; i <= alphabetCharacters.length; i++){
-            if(shiftValue == 0) newShiftedString = this.alphabetWord;
+            if(shiftValue == 0 && randomWord != "") newShiftedString = this.alphabetWord;
             else if (randomWord == "" && shiftValue >= 0) newShiftedString = "Please type your word";
             }
         return newShiftedString;

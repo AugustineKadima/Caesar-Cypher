@@ -11,7 +11,7 @@ public class CaesarCypherTest {
     @Test
     public void caesar_Cypher_shiftCharacterOneStepForward_emptyString_int(){
         CaesarCypher caesarCypher = new CaesarCypher();
-        String expected = "";
+        String expected = "Please type your word";
         Assertions.assertEquals(expected, caesarCypher.shiftCharOneStepForward("", 0));
     }
 }
