@@ -26,4 +26,11 @@ public class CaesarCypherTest {
         String expected = "z";
         Assertions.assertEquals(expected, caesarCypher.shiftCharOneStepForward("a", 25));
     }
+    @Test
+    public void caesar_Cypher_decipherText_string_char(){
+        CaesarCypher caesarCypher = new CaesarCypher();
+        String expected = "x";
+        Assertions.assertEquals(expected, caesarCypher.dicipherText());
+    }
+
 }
