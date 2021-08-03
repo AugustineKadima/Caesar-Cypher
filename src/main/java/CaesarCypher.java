@@ -1,7 +1,7 @@
 
 public class CaesarCypher {
-    int shiftValue;
-    String alphabetWord;
+    private int shiftValue;
+    private String alphabetWord;
 
     public String getAlphabetWord() {
         return alphabetWord;
